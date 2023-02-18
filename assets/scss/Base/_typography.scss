@@ -1,0 +1,47 @@
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 30px;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+/* ---------heading-primary--------- */
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &--main {
+    display: block;
+    font-size: 6.2rem;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation-name: moveInLeft;
+    animation-duration: 1.3s;
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 18px;
+    animation-name: moveInRight;
+    animation-duration: 1.3s;
+
+    @include responsive(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}

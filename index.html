@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo đơn vị vận chuyển</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/844ecd1e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="/OwlCarousel2-2.3.4/src/js/owl.carousel.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/OwlCarousel2-2.3.4/src/js/owl.navigation.js"
+    ></script>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <!-- HEADER TOP -->
+      <div class="header-top py-10">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="header-left d-flex align-items-center">
+            <span class="header-left--title text-white">
+              Giờ làm việc :
+              <b>T2-T7: 8:00 - 18:00 (CN 8:00 - 17:00)</b>
+            </span>
+          </div>
+          <div class="header-right d-flex align-items-center">
+            <div class="header-right--login">
+              <a href="javascript:void(0)" class="text-white">Tạo vận đơn/Đăng nhập</a>
+            </div>
+            <div class="header-right--lang dropdown">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  VN
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">ENG</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END HEADER TOP -->
+      <!-- HEADER BOT -->
+      <div class="header-bot main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mt-2 mt-lg-0" href="#" title="Trang chủ">
+              <img src="/assets/img/logo-main.png" height="60" alt="Logo" />
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vận đơn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bảng giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-flex align-items-center main-nav-call">
+              <a class="main-nav-call--title text-primary" href="tel:000000000">
+                <i class="fa-solid fa-phone"></i>
+                Số điện thoại
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- END HEADER BOT -->
+    </header>
+    <!-- END HEADER -->
+    <div id="main" class="main-wrapper">
+      <!-- SLIDER -->
+      <div class="slider">
+        <div class="slider-carousel owl-carousel owl-theme">
+          <div class="item">
+            <img class="img-responsive" src="./assets/img/slide_1.jpg" alt="slide_1" />
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="./assets/img/slide_5.jpg" alt="slide_2" />
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="./assets/img/slide_6.jpg" alt="slide_3" />
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="./assets/img/slide_7.jpg" alt="slide_4" />
+          </div>
+        </div>
+        <div class="slider-search-form">
+          <div class="carousel-content col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="slider-search-box">
+              <div class="slider-search-box--item">
+                <a href="#" class="slider-search-box--link">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  Tạo vận đơn / Đăng nhập
+                </a>
+              </div>
+              <div class="slider-search-box--item">
+                <a href="#" class="slider-search-box--link">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Tra cứu vận đơn
+                </a>
+              </div>
+              <div class="slider-search-box--item">
+                <a href="#" class="slider-search-box--link">
+                  <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                  Tra cứu cước phí
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END SLIDER -->
+      <div class="container">
+        <!-- POLICY -->
+        <div class="policy-section">
+          <div class="row">
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-plane"></i>
+                <span>Dịch vụ chuyển phát nhanh</span>
+              </a>
+            </div>
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Dịch vụ giao hỏa tốc</span>
+              </a>
+            </div>
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-boxes-packing"></i>
+                <span>Dịch vụ hàng giá trị cao</span>
+              </a>
+            </div>
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-truck-moving"></i>
+                <span>Dịch vụ chuyển phát thường</span>
+              </a>
+            </div>
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <span>Dịch vụ chuyển tiết kiệm</span>
+              </a>
+            </div>
+            <div class="policy-item col-2">
+              <a href="#" class="policy-item--box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Dịch vụ gia tăng</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- END POLICY -->
+        <!-- SERVICES -->
+        <div class="servies-section">
+          <div class="panel">
+            <div class="panel-header py-30">
+              <h3 class="panel-title text-uppercase text-center">
+                dịch vụ của chúng tôi
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row services-list">
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-6 services-item">
+                  <a href="#">
+                    <div class="card text-white card-has-bg">
+                      <div class="services-item--overlay">
+                        <div class="services-item--body">
+                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <p>
+                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
+                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
+                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END SERVICES -->
+        <!-- STEPS -->
+        <div class="steps-section">
+          <div class="panel">
+            <div class="panel-header py-30">
+              <h3 class="panel-title text-uppercase text-center">
+                các bước đăng ký vận đơn
+              </h3>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <!-- END STEPS -->
+        <!-- NEWS -->
+        <div class="news-section">
+          <div class="panel">
+            <div class="panel-header py-30">
+              <h3 class="panel-title text-uppercase text-center">tin tức</h3>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <!-- END NEWS -->
+        <!-- ACTIVITY -->
+        <div class="activity-section">
+          <div class="panel">
+            <div class="panel-header py-30">
+              <h3 class="panel-title text-uppercase text-center">
+                hoạt động doanh nghiệp
+              </h3>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <!-- END ACTIVITY -->
+      </div>
+    </div>
+    <footer id="footer" class="footer hidden-print container"></footer>
+  </body>
+</html>
+<script>
+  $(".owl-carousel").owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+</script>

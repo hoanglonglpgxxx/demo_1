@@ -1,0 +1,22 @@
+@import "../custom";
+
+/*--- HEADER ---*/
+.header {
+  .header-top {
+    background: $primary;
+    padding: 10px 0;
+  }
+  .header-bot {
+    .navbar-brand {
+      img {
+        max-height: 80px;
+      }
+    }
+    .text-primary {
+      color: $primary !important;
+    }
+  }
+}
+.owl-item {
+  height: 80vh;
+}
