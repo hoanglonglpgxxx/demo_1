@@ -374,7 +374,9 @@
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
       }
-      padding-right: 0;
+      @media (min-width: 768px) {
+        padding-right: 0;
+      }
     }
     &__box {
       &:not(:last-of-type) {
