@@ -25,6 +25,7 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
+    <script type="text/javascript" src="./assets/js/getNav.js"></script>
   </head>
   <body>
     <script type="text/javascript" src="./assets/js/script.js"></script>
@@ -39,6 +40,10 @@
     <script
       type="text/javascript"
       src="./OwlCarousel2-2.3.4/src/js/owl.navigation.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/bootstrap/js/src/collapse.js"
     ></script>
     <div id="backToTop">
       <i class="fa fa-arrow-up"></i>
@@ -56,23 +61,29 @@
           </div>
           <div class="header-right d-flex align-items-center">
             <div class="header-right__login">
-              <a href="javascript:void(0)" class="text-white">Tạo vận đơn/Đăng nhập</a>
+              <a href="./login.html" class="text-white">Tạo vận đơn/Đăng nhập</a>
             </div>
-            <div class="header-right__lang dropdown">
+            <div class="header-right__lang">
               <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
+                <a
+                  class="dropdown-toggle header-right__change"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
+                  title="Tiếng Việt"
+                  href="javascript:void(0)"
                 >
-                  VN
-                </button>
+                  <img src="./assets/img/vi.png" alt="Tiếng Việt" />
+                </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">ENG</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="./assets/img/en.png" alt="English" />
+                    English
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="./assets/img/vi.png" alt="Tiếng Việt" />
+                    Tiếng Việt
+                  </a>
                 </div>
               </div>
             </div>
@@ -86,8 +97,8 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarSupportedContent"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -176,16 +187,14 @@
                 </li>
               </ul>
             </div>
-
-            <div class="d-flex align-items-center main-nav-call">
-              <a class="main-nav-call--title text-primary" href="tel:0967118716">
+            <div class="d-flex align-items-center main-nav-call fw-bold">
+              <a class="main-nav-call__title text-primary" href="tel:0967118716">
                 <i class="fa-solid fa-phone me-1"></i>
-                0967 118 716
+                0967.118.716
               </a>
             </div>
           </div>
         </nav>
-      </div>
     </header>
     <div id="main" class="main-wrapper">
       <!-- SLIDER -->
@@ -255,37 +264,37 @@
         <!-- POLICY -->
         <div class="policy-section">
           <div class="row">
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-plane"></i>
                 <span class="d-block">Dịch vụ chuyển phát nhanh</span>
               </a>
             </div>
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-rocket"></i>
                 <span class="d-block">Dịch vụ giao hỏa tốc</span>
               </a>
             </div>
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-boxes-packing"></i>
                 <span class="d-block">Dịch vụ hàng giá trị cao</span>
               </a>
             </div>
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-truck-moving"></i>
                 <span class="d-block">Dịch vụ chuyển phát thường</span>
               </a>
             </div>
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-piggy-bank"></i>
                 <span class="d-block">Dịch vụ chuyển tiết kiệm</span>
               </a>
             </div>
-            <div class="policy-item col-2">
+            <div class="policy-item col-lg-2 col-md-4">
               <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span class="d-block">Dịch vụ gia tăng</span>
@@ -591,7 +600,7 @@
             </div>
             <div class="panel-body">
               <div class="row align-items-center">
-                <div class="activity-left col-lg-5 col-md-5">
+                <div class="activity-left col-lg-5 col-md-12">
                   <div class="activity-carousel owl-carousel owl-carousel-acti owl-theme">
                     <div class="item">
                       <img
@@ -624,7 +633,7 @@
                   </div>
                 </div>
                 <div
-                  class="activity-right col-lg-7 d-flex flex-column-reverse flex-md-row"
+                  class="activity-right col-lg-7 col-md-12 d-flex flex-column-reverse flex-md-row"
                 >
                   <div class="activity-right__img col-md-5">
                     <img src="./assets/img/slide_3.jpg" alt="" />
@@ -632,7 +641,7 @@
                   <div class="activity-right__review col-md-7">
                     <h3>Khách hàng nói gì về chúng tôi</h3>
                     <div class="activity-right__box">
-                      <h4 class="activity-right__quote">"</h4>
+                      <h4 class="activity-right__quote">”</h4>
                       <p>
                         Đồng hành Delivered Express 4 năm rồi và chưa bao giờ thấy mình
                         lựa chọn sai. Các bạn giao hàng rất nhiệt tình và lễ phép, lấy
@@ -663,22 +672,23 @@
       </div>
     </div>
     <!-- FOOTER -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer id="footer" class="text-center text-lg-start bg-light">
       <div class="footer-img">
         <img src="./assets/img/unnamed.jpg" alt="" />
       </div>
       <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <img height="120px" src="./assets/img/main_logo.png" alt="" />
+        <div class="row mt-3 align-items-center">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-2">
+              <img src="./assets/img/unnamed.jpg" alt="" />
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit.
+             <b class="d-block">Hỗ trợ khách hàng</b>
+             <span class="d-block">Hotling:  0967.118.716</span>
+             <span class="d-block">Giờ làm việc: T2-T7: 8h - 18h (CN: 8h - 17h)</span>
             </p>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
             <p>
               <i class="fa fa-home"></i>
@@ -693,7 +703,7 @@
               <a href="#!" class="text-reset">admin@domain.vn</a>
             </p>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
             <p>
               <i class="fa fa-home"></i>
@@ -708,7 +718,7 @@
               <a href="#!" class="text-reset">admin@domain.</a>
             </p>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
             <p>
               <i class="fa fa-home"></i>
@@ -726,9 +736,9 @@
         </div>
       </div>
       <!-- COPYRIGHT -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.1)">
         © 2022 Bản quyền thuộc về
-        <a class="text-reset fw-bold" href="#">A</a>
+        <a class="text-reset fw-bold" href="#">Delivered Express</a>
         <div>Giấy phép bưu chính số ngày tháng năm của BỘ THÔNG TIN VÀ TRUYỀN THÔNG</div>
       </div>
     </footer>

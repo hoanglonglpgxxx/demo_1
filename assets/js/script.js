@@ -25,4 +25,9 @@ $(document).ready(function () {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
+    $(window).resize(function () {
+        if ($(window).width() < 1025) {
+            $('.news-right .news-right__box').last().hide();
+        }
+    }).resize();
 });
