@@ -7,6 +7,9 @@
     padding: 10px 0;
   }
   .header-bot {
+    .nav-item a {
+      font-size: 14px;
+    }
     .navbar-brand {
       img {
         max-height: 80px;
@@ -15,11 +18,14 @@
     .text-primary {
       color: $primary !important;
     }
+    @media (min-width: 769px) {
+      .navbar-collapse {
+        justify-content: center;
+      }
+    }
   }
 }
-.owl-item {
-  height: 80vh;
-}
+
 /*--- NAVBAR ---*/
 .navbar {
   transition: all 0.4s;

@@ -49,16 +49,16 @@
       <div class="header-top py-10">
         <div class="container d-flex align-items-center justify-content-between">
           <div class="header-left d-flex align-items-center">
-            <span class="header-left--title text-white">
+            <span class="header-left__title text-white">
               Giờ làm việc :
               <b>T2-T7: 8:00 - 18:00 (CN 8:00 - 17:00)</b>
             </span>
           </div>
           <div class="header-right d-flex align-items-center">
-            <div class="header-right--login">
+            <div class="header-right__login">
               <a href="javascript:void(0)" class="text-white">Tạo vận đơn/Đăng nhập</a>
             </div>
-            <div class="header-right--lang dropdown">
+            <div class="header-right__lang dropdown">
               <div class="dropdown">
                 <button
                   class="btn btn-secondary dropdown-toggle"
@@ -190,7 +190,7 @@
     <div id="main" class="main-wrapper">
       <!-- SLIDER -->
       <div class="slider">
-        <div class="slider-carousel owl-carousel owl-theme">
+        <div class="slider-carousel owl-carousel owl-carousel-main owl-theme">
           <div class="item">
             <img class="img-responsive" src="./assets/img/slide_1.jpg" alt="slide_1" />
           </div>
@@ -207,27 +207,27 @@
         <div class="slider-box container">
           <div class="carousel-content col-lg-6 col-md-12 col-sm-12 col-12">
             <!-- BOX LIST -->
-            <div class="slider-box--list row justify-content-center align-items-center">
+            <div class="slider-box__list row justify-content-center align-items-center">
               <div
-                class="slider-box--item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
+                class="slider-box__item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
               >
-                <a href="#" class="slider-box--link">
+                <a href="#" class="slider-box__link">
                   <i class="fa-solid fa-cart-plus"></i>
                   <span class="d-block">Tạo vận đơn / Đăng nhập</span>
                 </a>
               </div>
               <div
-                class="slider-box--item d-flex align-items-center active justify-content-center col-lg-4 col-md-4"
+                class="slider-box__item d-flex align-items-center active justify-content-center col-lg-4 col-md-4"
               >
-                <a href="#" class="slider-box--link">
+                <a href="#" class="slider-box__link">
                   <i class="fa-solid fa-map-location-dot"></i>
                   <span class="d-block">Tra cứu vận đơn</span>
                 </a>
               </div>
               <div
-                class="slider-box--item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
+                class="slider-box__item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
               >
-                <a href="#" class="slider-box--link">
+                <a href="#" class="slider-box__link">
                   <i class="fa-solid fa-magnifying-glass-dollar"></i>
                   <span class="d-block">Tra cứu cước phí</span>
                 </a>
@@ -235,7 +235,7 @@
             </div>
             <!-- SEARCH FORM-->
             <div
-              class="slider-box--search mt-4 d-flex col-lg-10 align-items-center justify-content-center"
+              class="slider-box__search mt-4 d-flex col-lg-10 align-items-center justify-content-center"
             >
               <input
                 type="search"
@@ -256,37 +256,37 @@
         <div class="policy-section">
           <div class="row">
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-plane"></i>
                 <span class="d-block">Dịch vụ chuyển phát nhanh</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-rocket"></i>
                 <span class="d-block">Dịch vụ giao hỏa tốc</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-boxes-packing"></i>
                 <span class="d-block">Dịch vụ hàng giá trị cao</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-truck-moving"></i>
                 <span class="d-block">Dịch vụ chuyển phát thường</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-piggy-bank"></i>
                 <span class="d-block">Dịch vụ chuyển tiết kiệm</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box d-block text-center">
+              <a href="#" class="policy-item__box d-block text-center">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span class="d-block">Dịch vụ gia tăng</span>
               </a>
@@ -294,7 +294,7 @@
           </div>
         </div>
         <!-- SERVICES -->
-        <div class="servies-section">
+        <div class="services-section">
           <div class="panel border-bot">
             <div class="panel-heading py-30">
               <h3 class="panel-title text-uppercase text-center">
@@ -305,10 +305,10 @@
               <div class="row services-list">
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                    <div class="card text-white services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">Dịch vụ chuyển phát nhanh</h4>
                           <p>
                             Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
                             gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
@@ -321,10 +321,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">
+                    <div class="card text-white services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">
                             Dịch vụ phát hỏa tốc, yêu cầu
                           </h4>
                           <p>
@@ -341,10 +341,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">
+                    <div class="card text-white services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">
                             Dịch vụ hàng giá trị cao, express
                           </h4>
                           <p>
@@ -361,10 +361,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát thường</h4>
+                    <div class="card text-white services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">Dịch vụ chuyển phát thường</h4>
                           <p>
                             Netpost cung cấp dịch vụ chuyển phát thường trong nước, nhận
                             tận nơi và phát tận nơi theo yêu cầu của Quý khách hàng.Hàng
@@ -378,10 +378,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ phát tiết kiệm 48h</h4>
+                    <div class="card text-white card-has-bg services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">Dịch vụ phát tiết kiệm 48h</h4>
                           <p>
                             Netpost cung cấp dịch vụ chuyển phát tiết kiệm. Đó là sự kết
                             hợp giữa đường hàng không và đường bộ để tạo ra một dịch vụ
@@ -395,10 +395,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-6 services-item">
                   <a href="#">
-                    <div class="card text-white card-has-bg">
-                      <div class="services-item--overlay">
-                        <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ gia tăng</h4>
+                    <div class="card text-white card-has-bg services-item__card">
+                      <div class="services-item__overlay">
+                        <div class="services-item__body services-item__overlay__body">
+                          <h4 class="services-item__title">Dịch vụ gia tăng</h4>
                           <p>
                             Netpost cung cấp các dịch vụ gia tăng như phát tận tay, khai
                             giá, phát ngoài giờ hành chính, phát hàng thu tiền COD, báo
@@ -436,7 +436,7 @@
                         class="steps-vid"
                         height="215"
                         width="332"
-                        src="https://www.youtube.com/embed/0JNveApOshw?rel=0;&amp;mute=1;&amp;playlist=0JNveApOshw"
+                        src="https://www.youtube.com/embed/oPmhE_EmLjk?rel=0;&amp;mute=1;"
                         frameborder="0"
                         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen=""
@@ -445,11 +445,21 @@
                   </div>
                 </div>
                 <div class="steps-right col-md-7 col-lg-7">
-                  <div class="img-main"></div>
-                  <div class="img-1"></div>
-                  <div class="img-2"></div>
-                  <div class="img-3"></div>
-                  <div class="img-4"></div>
+                  <div class="img-main">
+                    <img src="/assets/img/step.png" alt="" />
+                  </div>
+                  <div class="img-1">
+                    <img src="/assets/img/step_1.png" alt="" />
+                  </div>
+                  <div class="img-2">
+                    <img src="/assets/img/step_2.png" alt="" />
+                  </div>
+                  <div class="img-3">
+                    <img src="/assets/img/step_3.png" alt="" />
+                  </div>
+                  <div class="img-4">
+                    <img src="/assets/img/step_4.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -464,14 +474,14 @@
             <div class="panel-body">
               <div class="row">
                 <div class="news-left col-md-6">
-                  <div class="news-left--box news-box">
-                    <div class="news-left--img">
+                  <div class="news-left__box news-box">
+                    <div class="news-left__img">
                       <a href="#">
                         <img src="/assets/img/slide_1.jpg" alt="" />
                       </a>
                     </div>
-                    <div class="news-left--content">
-                      <div class="news-left--title">
+                    <div class="news-left__content">
+                      <div class="news-left__title news-title">
                         <a href="#"> Tưng bừng khai trương </a>
                       </div>
                       <div class="news-time">
@@ -491,14 +501,14 @@
                   </div>
                 </div>
                 <div class="news-right col-md-6">
-                  <div class="news-right--box news-box row">
-                    <div class="news-right--img col-lg-4">
+                  <div class="news-right__box news-box row">
+                    <div class="news-right__img col-lg-4">
                       <a href="#">
                         <img src="/assets/img/slide_1.jpg" alt="" />
                       </a>
                     </div>
-                    <div class="news-right--content col-lg-8">
-                      <div class="news-right--title">
+                    <div class="news-right__content col-lg-8">
+                      <div class="news-right__title news-title">
                         <a href="#"> Tưng bừng khai trương </a>
                       </div>
                       <div class="news-time">
@@ -516,14 +526,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="news-right--box news-box row">
-                    <div class="news-right--img col-lg-4">
+                  <div class="news-right__box news-box row">
+                    <div class="news-right__img col-lg-4">
                       <a href="#">
                         <img src="/assets/img/slide_1.jpg" alt="" />
                       </a>
                     </div>
-                    <div class="news-right--content col-lg-8">
-                      <div class="news-right--title">
+                    <div class="news-right__content col-lg-8">
+                      <div class="news-right__title news-title">
                         <a href="#"> Tưng bừng khai trương </a>
                       </div>
                       <div class="news-time">
@@ -541,14 +551,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="news-right--box news-box row">
-                    <div class="news-right--img col-lg-4">
+                  <div class="news-right__box news-box row">
+                    <div class="news-right__img col-lg-4">
                       <a href="#">
                         <img src="/assets/img/slide_1.jpg" alt="" />
                       </a>
                     </div>
-                    <div class="news-right--content col-lg-8">
-                      <div class="news-right--title">
+                    <div class="news-right__content col-lg-8">
+                      <div class="news-right__title news-title">
                         <a href="#"> Tưng bừng khai trương </a>
                       </div>
                       <div class="news-time">
@@ -580,8 +590,8 @@
               </h3>
             </div>
             <div class="panel-body">
-              <div class="row">
-                <div class="activity-left col-lg-6 col-md-6">
+              <div class="row align-items-center">
+                <div class="activity-left col-lg-5 col-md-5">
                   <div class="activity-carousel owl-carousel owl-carousel-acti owl-theme">
                     <div class="item">
                       <img
@@ -613,6 +623,39 @@
                     </div>
                   </div>
                 </div>
+                <div
+                  class="activity-right col-lg-7 d-flex flex-column-reverse flex-md-row"
+                >
+                  <div class="activity-right__img col-md-5">
+                    <img src="./assets/img/slide_3.jpg" alt="" />
+                  </div>
+                  <div class="activity-right__review col-md-7">
+                    <h3>Khách hàng nói gì về chúng tôi</h3>
+                    <div class="activity-right__box">
+                      <h4 class="activity-right__quote">"</h4>
+                      <p>
+                        Đồng hành Delivered Express 4 năm rồi và chưa bao giờ thấy mình
+                        lựa chọn sai. Các bạn giao hàng rất nhiệt tình và lễ phép, lấy
+                        hàng quen thành ra mấy mấy chị em cũng hay hỏi thăm nhau.
+                      </p>
+                      <div
+                        class="activity-right__info d-flex justify-content-between align-items-end"
+                      >
+                        <div>
+                          <span class="text-danger fw-bold"> Chị Hoa </span>
+                          <p>Khách hàng Hà Nội</p>
+                        </div>
+                        <div>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -624,66 +667,64 @@
       <div class="footer-img">
         <img src="/assets/img/unnamed.jpg" alt="" />
       </div>
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-                <img height="120px" src="/assets/img/main_logo.png" alt="" />
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
-              <p>
-                <i class="fa fa-home"></i>
-                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
-              </p>
-              <p>
-                <i class="fa fa-phone"></i>
-                <a href="#!" class="text-reset">012.3456.789</a>
-              </p>
-              <p>
-                <i class="fa fa-envelope"></i>
-                <a href="#!" class="text-reset">admin@domain.vn</a>
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
-              <p>
-                <i class="fa fa-home"></i>
-                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
-              </p>
-              <p>
-                <i class="fa fa-phone"></i>
-                <a href="#!" class="text-reset">012.3456.789</a>
-              </p>
-              <p>
-                <i class="fa fa-envelope"></i>
-                <a href="#!" class="text-reset">admin@domain.</a>
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
-              <p>
-                <i class="fa fa-home"></i>
-                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
-              </p>
-              <p>
-                <i class="fa fa-phone"></i>
-                <a href="#!" class="text-reset">012.3456.789</a>
-              </p>
-              <p>
-                <i class="fa fa-envelope"></i>
-                <a href="#!" class="text-reset">admin@domain.</a>
-              </p>
-            </div>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img height="120px" src="/assets/img/main_logo.png" alt="" />
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <a href="#!" class="text-reset">012.3456.789</a>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <a href="#!" class="text-reset">admin@domain.vn</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <a href="#!" class="text-reset">012.3456.789</a>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <a href="#!" class="text-reset">admin@domain.</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <a href="#!" class="text-reset">012.3456.789</a>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <a href="#!" class="text-reset">admin@domain.</a>
+            </p>
           </div>
         </div>
-      </section>
+      </div>
       <!-- COPYRIGHT -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
         © 2022 Bản quyền thuộc về
@@ -694,7 +735,13 @@
   </body>
 </html>
 <script>
-  $(".owl-carousel").owlCarousel({
+  let serviceItems = $(".services-item__card").toArray();
+  for (var i in serviceItems) {
+    $(serviceItems[i]).css({
+      backgroundImage: `url(/assets/img/person_${+i + 1}.png)`,
+    });
+  }
+  $(".owl-carousel-main").owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,
@@ -725,21 +772,18 @@
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
     nav: true,
-    dots: true,
-    navText: [
-      "<i class='fas fa-chevron-left'></i>",
-      "<i class='fas fa-chevron-right'></i>",
-    ],
+    dots: false,
+    center: true,
+    navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
     responsive: {
       0: {
-        items: 1,
+        items: 2,
       },
       600: {
-        items: 1,
+        items: 2,
       },
       1000: {
-        items: 1.6,
-        center: true,
+        items: 1.5,
       },
     },
   });

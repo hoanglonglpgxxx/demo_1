@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('.slider-box--item').hover(function () {
-        $('.slider-box--item').removeClass('active');
+    $('.slider-box__item').hover(function () {
+        $('.slider-box__item').removeClass('active');
         $(this).toggleClass('active');
     });
     $(document).scroll(function () {
@@ -11,5 +11,18 @@ $(document).ready(function () {
         } else {
             $('.navbar').removeClass('fixed-top');
         }
+    });
+    window.onscroll = function () { scrollFunction(); };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $('#backToTop').show();
+        } else {
+            $('#backToTop').hide();
+        }
+    }
+    $('#backToTop').click(function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     });
 });

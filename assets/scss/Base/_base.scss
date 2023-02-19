@@ -2,6 +2,34 @@ img {
   width: 100%;
   height: 100%;
 }
+body {
+  font-size: 14px;
+}
+#backToTop {
+  position: fixed;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1000;
+  background: $primary;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  transition: all 0.4s;
+  &:hover {
+    background: $white;
+    i {
+      color: $primary;
+    }
+  }
+  i {
+    color: $white;
+  }
+}
 /*--- PANEL BORDER BOTTOM ---*/
 .border-bot {
   .panel-heading {
