@@ -1,8 +1,10 @@
-@import "./Components/header";
-@import "./Abstracts/mixin";
+@import "Components/header";
+@import "Abstracts/mixin";
+@import "Abstracts/custom";
 @import "Base/animation";
 @import "Base/base";
 @import "Base/typography";
+@import "Components/content";
 // @import "Components/composition";
 @import "Pages/home";
 @import "Base/ultilities";

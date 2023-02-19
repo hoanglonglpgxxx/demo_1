@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo đơn vị vận chuyển</title>
+    <title>Delivered Express</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon-32x32.png" />
     <script
       src="https://kit.fontawesome.com/844ecd1e03.js"
@@ -25,17 +25,24 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
   </head>
   <body>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
     <script
       type="text/javascript"
       src="/OwlCarousel2-2.3.4/src/js/owl.carousel.js"
     ></script>
     <script
       type="text/javascript"
+      src="/OwlCarousel2-2.3.4/src/js/owl.autoplay.js"
+    ></script>
+    <script
+      type="text/javascript"
       src="/OwlCarousel2-2.3.4/src/js/owl.navigation.js"
     ></script>
+    <div id="backToTop">
+      <i class="fa fa-arrow-up"></i>
+    </div>
     <!-- HEADER -->
     <header class="header" id="header">
       <!-- HEADER TOP -->
@@ -72,7 +79,6 @@
           </div>
         </div>
       </div>
-      <!-- END HEADER TOP -->
       <!-- HEADER BOT -->
       <div class="header-bot main-nav">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -91,23 +97,73 @@
             <a class="navbar-brand mt-2 mt-lg-0" href="#" title="Trang chủ">
               <img src="/assets/img/logo-main.png" height="60" alt="Logo" />
             </a>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Trang chủ</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Vận đơn</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    >Vận đơn</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item"> Tạo vận đơn</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Tra cứu vận đơn</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Tra cứu cước phí</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Giới thiệu</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dịch vụ</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    >Dịch vụ</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ chuyển phát nhanh</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ phát hỏa tốc, yêu cầu</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ hàng giá trị cao</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ thường</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ tiết kiệm 24h</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Dịch vụ gia tăng</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Bảng giá</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    >Bảng giá</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item"> Bảng giá Hà Nội</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Bảng giá Hồ Chí Minh</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Bảng giá Đà Nẵng</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"> Tra cứu cước phí</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Tuyển dụng</a>
@@ -122,17 +178,15 @@
             </div>
 
             <div class="d-flex align-items-center main-nav-call">
-              <a class="main-nav-call--title text-primary" href="tel:000000000">
-                <i class="fa-solid fa-phone"></i>
-                Số điện thoại
+              <a class="main-nav-call--title text-primary" href="tel:0967118716">
+                <i class="fa-solid fa-phone me-1"></i>
+                0967 118 716
               </a>
             </div>
           </div>
         </nav>
       </div>
-      <!-- END HEADER BOT -->
     </header>
-    <!-- END HEADER -->
     <div id="main" class="main-wrapper">
       <!-- SLIDER -->
       <div class="slider">
@@ -150,27 +204,48 @@
             <img class="img-responsive" src="./assets/img/slide_7.jpg" alt="slide_4" />
           </div>
         </div>
-        <div class="slider-search-form">
+        <div class="slider-box container">
           <div class="carousel-content col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="slider-search-box">
-              <div class="slider-search-box--item">
-                <a href="#" class="slider-search-box--link">
+            <!-- BOX LIST -->
+            <div class="slider-box--list row justify-content-center align-items-center">
+              <div
+                class="slider-box--item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
+              >
+                <a href="#" class="slider-box--link">
                   <i class="fa-solid fa-cart-plus"></i>
-                  Tạo vận đơn / Đăng nhập
+                  <span class="d-block">Tạo vận đơn / Đăng nhập</span>
                 </a>
               </div>
-              <div class="slider-search-box--item">
-                <a href="#" class="slider-search-box--link">
+              <div
+                class="slider-box--item d-flex align-items-center active justify-content-center col-lg-4 col-md-4"
+              >
+                <a href="#" class="slider-box--link">
                   <i class="fa-solid fa-map-location-dot"></i>
-                  Tra cứu vận đơn
+                  <span class="d-block">Tra cứu vận đơn</span>
                 </a>
               </div>
-              <div class="slider-search-box--item">
-                <a href="#" class="slider-search-box--link">
+              <div
+                class="slider-box--item d-flex align-items-center justify-content-center col-lg-4 col-md-4"
+              >
+                <a href="#" class="slider-box--link">
                   <i class="fa-solid fa-magnifying-glass-dollar"></i>
-                  Tra cứu cước phí
+                  <span class="d-block">Tra cứu cước phí</span>
                 </a>
               </div>
+            </div>
+            <!-- SEARCH FORM-->
+            <div
+              class="slider-box--search mt-4 d-flex col-lg-10 align-items-center justify-content-center"
+            >
+              <input
+                type="search"
+                id="form1"
+                class="form-control"
+                placeholder="Nhập mã vận đơn"
+              />
+              <button type="button" class="btn">
+                <span>Tra cứu</span>
+              </button>
             </div>
           </div>
         </div>
@@ -181,48 +256,47 @@
         <div class="policy-section">
           <div class="row">
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-plane"></i>
-                <span>Dịch vụ chuyển phát nhanh</span>
+                <span class="d-block">Dịch vụ chuyển phát nhanh</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-rocket"></i>
-                <span>Dịch vụ giao hỏa tốc</span>
+                <span class="d-block">Dịch vụ giao hỏa tốc</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-boxes-packing"></i>
-                <span>Dịch vụ hàng giá trị cao</span>
+                <span class="d-block">Dịch vụ hàng giá trị cao</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-truck-moving"></i>
-                <span>Dịch vụ chuyển phát thường</span>
+                <span class="d-block">Dịch vụ chuyển phát thường</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-piggy-bank"></i>
-                <span>Dịch vụ chuyển tiết kiệm</span>
+                <span class="d-block">Dịch vụ chuyển tiết kiệm</span>
               </a>
             </div>
             <div class="policy-item col-2">
-              <a href="#" class="policy-item--box">
+              <a href="#" class="policy-item--box d-block text-center">
                 <i class="fa-solid fa-chart-simple"></i>
-                <span>Dịch vụ gia tăng</span>
+                <span class="d-block">Dịch vụ gia tăng</span>
               </a>
             </div>
           </div>
         </div>
-        <!-- END POLICY -->
         <!-- SERVICES -->
         <div class="servies-section">
-          <div class="panel">
-            <div class="panel-header py-30">
+          <div class="panel border-bot">
+            <div class="panel-heading py-30">
               <h3 class="panel-title text-uppercase text-center">
                 dịch vụ của chúng tôi
               </h3>
@@ -250,11 +324,15 @@
                     <div class="card text-white card-has-bg">
                       <div class="services-item--overlay">
                         <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <h4 class="services-item--title">
+                            Dịch vụ phát hỏa tốc, yêu cầu
+                          </h4>
                           <p>
-                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
-                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
-                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                            Dịch vụ phát Hỏa Tốc, Hẹn giờ, Trước 09h00: là dịch vụ mà bưu
+                            gửi được tổ chức khai thác và chuyển phát cùng hành trình với
+                            các bưu gửi CPN thông thường. Tuy nhiên sẽ được ưu tiên sắp
+                            xếp để phát đến người nhận trong khoảng thời gian trước 09
+                            giờ.
                           </p>
                         </div>
                       </div>
@@ -266,11 +344,15 @@
                     <div class="card text-white card-has-bg">
                       <div class="services-item--overlay">
                         <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <h4 class="services-item--title">
+                            Dịch vụ hàng giá trị cao, express
+                          </h4>
                           <p>
-                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
-                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
-                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                            Dịch vụ đặc thù mà bưu gửi được tổ chức khai thác và chuyển
+                            phát cùng hành trình với các bưu gửi CPN thông thường. Tuy
+                            nhiên sẽ được ưu tiên sắp xếp để phát đến người nhận trong
+                            khoảng thời gian trong buổi sáng. Mức độ ưu tiên sau Dịch vụ
+                            Hỏa Tốc.
                           </p>
                         </div>
                       </div>
@@ -282,11 +364,12 @@
                     <div class="card text-white card-has-bg">
                       <div class="services-item--overlay">
                         <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <h4 class="services-item--title">Dịch vụ chuyển phát thường</h4>
                           <p>
-                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
-                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
-                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                            Netpost cung cấp dịch vụ chuyển phát thường trong nước, nhận
+                            tận nơi và phát tận nơi theo yêu cầu của Quý khách hàng.Hàng
+                            hóa được vận chuyển bằng đường bộ thời gian chuyển phát tính
+                            theo ngày (Phù hợp với những hàng hóa không cần quá nhanh).
                           </p>
                         </div>
                       </div>
@@ -298,11 +381,12 @@
                     <div class="card text-white card-has-bg">
                       <div class="services-item--overlay">
                         <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <h4 class="services-item--title">Dịch vụ phát tiết kiệm 48h</h4>
                           <p>
-                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
-                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
-                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                            Netpost cung cấp dịch vụ chuyển phát tiết kiệm. Đó là sự kết
+                            hợp giữa đường hàng không và đường bộ để tạo ra một dịch vụ
+                            tiết kiệm về chi phí nhưng vẫn đảm bảo cam kết về thời gian
+                            toàn trình.
                           </p>
                         </div>
                       </div>
@@ -314,11 +398,11 @@
                     <div class="card text-white card-has-bg">
                       <div class="services-item--overlay">
                         <div class="services-item--body">
-                          <h4 class="services-item--title">Dịch vụ chuyển phát nhanh</h4>
+                          <h4 class="services-item--title">Dịch vụ gia tăng</h4>
                           <p>
-                            Là dịch vụ chuyển phát nhanh trong nước và quốc tế theo thời
-                            gian được công bố trước, theo chỉ tiêu thời gian (xem phần chỉ
-                            tiêu thời gian) trong nước từ 12 đến 48 giờ.
+                            Netpost cung cấp các dịch vụ gia tăng như phát tận tay, khai
+                            giá, phát ngoài giờ hành chính, phát hàng thu tiền COD, báo
+                            phát, phát đồng kiểm, ...
                           </p>
                         </div>
                       </div>
@@ -329,53 +413,299 @@
             </div>
           </div>
         </div>
-        <!-- END SERVICES -->
         <!-- STEPS -->
-        <div class="steps-section">
-          <div class="panel">
-            <div class="panel-header py-30">
+        <div class="steps-section steps">
+          <div class="panel border-bot">
+            <div class="panel-heading py-30">
               <h3 class="panel-title text-uppercase text-center">
                 các bước đăng ký vận đơn
               </h3>
             </div>
-            <div class="panel-body"></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="steps-left col-md-5 col-lg-5">
+                  <div class="carousel-content-video">
+                    <img
+                      src="./assets/img/person_7.png"
+                      alt="img_2_people"
+                      class="steps-img"
+                    />
+                    <div class="steps-screen">
+                      <img src="/assets/img/screen.png" alt="" />
+                      <iframe
+                        class="steps-vid"
+                        height="215"
+                        width="332"
+                        src="https://www.youtube.com/embed/0JNveApOshw?rel=0;&amp;mute=1;&amp;playlist=0JNveApOshw"
+                        frameborder="0"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="steps-right col-md-7 col-lg-7">
+                  <div class="img-main"></div>
+                  <div class="img-1"></div>
+                  <div class="img-2"></div>
+                  <div class="img-3"></div>
+                  <div class="img-4"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- END STEPS -->
         <!-- NEWS -->
-        <div class="news-section">
-          <div class="panel">
-            <div class="panel-header py-30">
+        <div class="news-section news">
+          <div class="panel border-bot">
+            <div class="panel-heading py-30">
               <h3 class="panel-title text-uppercase text-center">tin tức</h3>
             </div>
-            <div class="panel-body"></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="news-left col-md-6">
+                  <div class="news-left--box news-box">
+                    <div class="news-left--img">
+                      <a href="#">
+                        <img src="/assets/img/slide_1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="news-left--content">
+                      <div class="news-left--title">
+                        <a href="#"> Tưng bừng khai trương </a>
+                      </div>
+                      <div class="news-time">
+                        <i class="fas fa-clock"></i>
+                        02/02/2023
+                      </div>
+                      <div class="news-brief">
+                        <span
+                          >Ngày 05/02/2023, BƯU CỤC ĐỒNG NAI rộn ràng khai trương tại số
+                          218 Tổ 7, Khu phố 11, Ph..</span
+                        >
+                        <a href="#">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-right col-md-6">
+                  <div class="news-right--box news-box row">
+                    <div class="news-right--img col-lg-4">
+                      <a href="#">
+                        <img src="/assets/img/slide_1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="news-right--content col-lg-8">
+                      <div class="news-right--title">
+                        <a href="#"> Tưng bừng khai trương </a>
+                      </div>
+                      <div class="news-time">
+                        <i class="fas fa-clock"></i>
+                        02/02/2023
+                      </div>
+                      <div class="news-brief">
+                        <span
+                          >Ngày 05/02/2023, BƯU CỤC ĐỒNG NAI rộn ràng khai trương tại số
+                          218 Tổ 7, Khu phố 11, Ph..</span
+                        >
+                        <a href="#">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-right--box news-box row">
+                    <div class="news-right--img col-lg-4">
+                      <a href="#">
+                        <img src="/assets/img/slide_1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="news-right--content col-lg-8">
+                      <div class="news-right--title">
+                        <a href="#"> Tưng bừng khai trương </a>
+                      </div>
+                      <div class="news-time">
+                        <i class="fas fa-clock"></i>
+                        02/02/2023
+                      </div>
+                      <div class="news-brief">
+                        <span
+                          >Ngày 05/02/2023, BƯU CỤC ĐỒNG NAI rộn ràng khai trương tại số
+                          218 Tổ 7, Khu phố 11, Ph..</span
+                        >
+                        <a href="#">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-right--box news-box row">
+                    <div class="news-right--img col-lg-4">
+                      <a href="#">
+                        <img src="/assets/img/slide_1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="news-right--content col-lg-8">
+                      <div class="news-right--title">
+                        <a href="#"> Tưng bừng khai trương </a>
+                      </div>
+                      <div class="news-time">
+                        <i class="fas fa-clock"></i>
+                        02/02/2023
+                      </div>
+                      <div class="news-brief">
+                        <span
+                          >Ngày 05/02/2023, BƯU CỤC ĐỒNG NAI rộn ràng khai trương tại số
+                          218 Tổ 7, Khu phố 11, Ph..</span
+                        >
+                        <a href="#">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- END NEWS -->
         <!-- ACTIVITY -->
-        <div class="activity-section">
-          <div class="panel">
-            <div class="panel-header py-30">
+        <div class="activity">
+          <div class="panel border-bot">
+            <div class="panel-heading py-30">
               <h3 class="panel-title text-uppercase text-center">
                 hoạt động doanh nghiệp
               </h3>
             </div>
-            <div class="panel-body"></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="activity-left col-lg-6 col-md-6">
+                  <div class="activity-carousel owl-carousel owl-carousel-acti owl-theme">
+                    <div class="item">
+                      <img
+                        class="img-responsive"
+                        src="./assets/img/slide_1.jpg"
+                        alt="slide_1"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        class="img-responsive"
+                        src="./assets/img/slide_5.jpg"
+                        alt="slide_2"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        class="img-responsive"
+                        src="./assets/img/slide_6.jpg"
+                        alt="slide_3"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        class="img-responsive"
+                        src="./assets/img/slide_7.jpg"
+                        alt="slide_4"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- END ACTIVITY -->
       </div>
     </div>
-    <footer id="footer" class="footer hidden-print container"></footer>
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <div class="footer-img">
+        <img src="/assets/img/unnamed.jpg" alt="" />
+      </div>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img height="120px" src="/assets/img/main_logo.png" alt="" />
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
+              <p>
+                <i class="fa fa-home"></i>
+                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="#!" class="text-reset">012.3456.789</a>
+              </p>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="#!" class="text-reset">admin@domain.vn</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
+              <p>
+                <i class="fa fa-home"></i>
+                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="#!" class="text-reset">012.3456.789</a>
+              </p>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="#!" class="text-reset">admin@domain.</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
+              <p>
+                <i class="fa fa-home"></i>
+                <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="#!" class="text-reset">012.3456.789</a>
+              </p>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="#!" class="text-reset">admin@domain.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- COPYRIGHT -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2022 Bản quyền thuộc về
+        <a class="text-reset fw-bold" href="#">A</a>
+        <div>Giấy phép bưu chính số ngày tháng năm của BỘ THÔNG TIN VÀ TRUYỀN THÔNG</div>
+      </div>
+    </footer>
   </body>
 </html>
 <script>
   $(".owl-carousel").owlCarousel({
-    rtl: true,
     loop: true,
     margin: 10,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true,
     nav: true,
-    dots: true,
+    dots: false,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
     responsive: {
       0: {
         items: 1,
@@ -385,6 +715,31 @@
       },
       1000: {
         items: 1,
+      },
+    },
+  });
+  $(".owl-carousel-acti").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: true,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1.6,
+        center: true,
       },
     },
   });

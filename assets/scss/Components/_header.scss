@@ -1,4 +1,4 @@
-@import "../custom";
+@import "../Abstracts/custom";
 
 /*--- HEADER ---*/
 .header {
@@ -19,4 +19,26 @@
 }
 .owl-item {
   height: 80vh;
+}
+/*--- NAVBAR ---*/
+.navbar {
+  transition: all 0.4s;
+  &.fixed-top {
+    background: $white;
+    transition: all 0.4s;
+    box-shadow: -4px 2px 20px 0px rgba(0 0 0 / 20%);
+  }
+}
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }
