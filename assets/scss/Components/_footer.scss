@@ -2,4 +2,16 @@
   i {
     color: $primary;
   }
+  @media (max-width: 767px) {
+    text-align: unset !important;
+    > .container {
+      text-align: unset !important;
+    }
+  }
+  @media (max-width: 545px) {
+    .copyright {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+  }
 }

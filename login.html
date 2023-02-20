@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Delivered Express</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/844ecd1e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <script type="text/javascript" src="./assets/js/login.js"></script>
+    <div class="row container header justify-content-center">
+      <div class="col-lg-5 login-form">
+        <form class="form" id="login">
+          <h1 class="form__title">Login</h1>
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+            <input
+              type="text"
+              class="form__input"
+              autofocus
+              placeholder="Username or email"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password" />
+            <div class="form__input-error-message"></div>
+          </div>
+          <button class="form__button" type="submit">Continue</button>
+          <p class="form__text">
+            <a href="#" class="form__link">Forgot your password?</a>
+          </p>
+          <p class="form__text">
+            <a class="form__link" href="./" id="linkCreateAccount"
+              >Don't have an account? Create account</a
+            >
+          </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+          <h1 class="form__title">Create Account</h1>
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+            <input
+              type="text"
+              id="signupUsername"
+              class="form__input"
+              autofocus
+              placeholder="Username"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <input
+              type="text"
+              class="form__input"
+              autofocus
+              placeholder="Email Address"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password" />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <input
+              type="password"
+              class="form__input"
+              autofocus
+              placeholder="Confirm password"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <button class="form__button" type="submit">Continue</button>
+          <p class="form__text">
+            <a class="form__link" href="./" id="linkLogin"
+              >Already have an account? Sign in</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="col-lg-7">
+        <iframe
+          style="margin: auto"
+          width="700"
+          height="450"
+          src="https://www.youtube.com/embed/0JNveApOshw?rel=0;&amp;autoplay=1;&amp;loop=1;&amp;mute=1;&amp;playlist=0JNveApOshw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+          __idm_id__="2170881"
+        ></iframe>
+      </div>
+    </div>
+  </body>
 </html>

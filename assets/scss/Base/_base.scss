@@ -20,6 +20,10 @@ body {
   border: 1px solid $primary;
   border-radius: 4px;
   transition: all 0.4s;
+  @media (max-width: 545px) {
+    width: 30px;
+    height: 30px;
+  }
   &:hover {
     background: $white;
     i {
@@ -50,6 +54,9 @@ body {
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+    }
+    @media (max-width: 320px) {
+      font-size: 1rem;
     }
   }
 }
