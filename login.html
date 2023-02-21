@@ -21,95 +21,57 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
   </head>
-  <body>
-    <script type="text/javascript" src="./assets/js/login.js"></script>
-    <div class="header justify-content-center row">
+  <body class="login-body">
+    <div class="header-login justify-content-center row">
       <img style="height: 120px; width: auto" src="/assets/img/logo-main.png" alt="" />
       <div class="text-center text-uppercase logo col-12">
         Công ty cổ phần chuyển phát nhanh Delivered Express
       </div>
-      <span class="text-center hotline">Hotline: 00000000</span>
+      <span class="text-center hotline">Hotline: 0967.118.716</span>
     </div>
-    <div class="container">
+    <div class="container login-page">
       <div class="row">
         <div class="col-lg-5 login-form">
+          <h1 class="form__title">Delivered Express</h1>
           <form class="form" id="login">
-            <h1 class="form__title">Delivered Express</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
               <label for="username">Tên đăng nhập</label>
               <input type="text" class="form__input" id="username" autofocus />
-              <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
               <label for="password">Mật khẩu</label>
-              <input type="password" class="form__input" autofocus id="password" />
-              <div class="form__input-error-message"></div>
+              <input type="password" class="form__input" id="password" />
             </div>
+            <div class="form-error-message"></div>
             <button class="form__button" type="submit">Đăng nhập</button>
-            <p class="form__text">
-              <a href="#" class="form__link">Forgot your password?</a>
-            </p>
-            <p class="form__text">
-              <a class="form__link" href="./" id="linkCreateAccount"
-                >Don't have an account? Create account</a
-              >
-            </p>
+            <a href="javascript:void(0)" class="form__link d-block">Quên mật khẩu ?</a>
           </form>
-          <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">Create Account</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-              <input
-                type="text"
-                id="signupUsername"
-                class="form__input"
-                autofocus
-                placeholder="Username"
-              />
-              <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-              <input
-                type="text"
-                class="form__input"
-                autofocus
-                placeholder="Email Address"
-              />
-              <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-              <input
-                type="password"
-                class="form__input"
-                autofocus
-                placeholder="Password"
-              />
-              <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-              <input
-                type="password"
-                class="form__input"
-                autofocus
-                placeholder="Confirm password"
-              />
-              <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-              <a class="form__link" href="./" id="linkLogin"
-                >Already have an account? Sign in</a
-              >
+          <form class="form" id="recoverAccount">
+            <p class="text-center form__msg">
+              Vui lòng nhập địa chỉ email đã dùng để đăng ký trên hệ thống.
             </p>
+            <div class="form__input-group">
+              <label for="username">Tên đăng nhập</label>
+              <input type="text" class="form__input" id="username" autofocus />
+            </div>
+            <div class="form__input-group">
+              <label for="email">Địa chỉ email</label>
+              <input type="email" class="form__input" id="email" />
+            </div>
+            <div class="form-error-message"></div>
+            <button class="form__button form__recover" type="submit">Khôi phục</button>
+            <a href="javascript:void(0)" class="form__back form__link d-block"
+              >Quay lại</a
+            >
           </form>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 login-right">
           <iframe
             style="margin: auto"
-            width="700"
+            width="100%"
             height="450"
-            src="https://www.youtube.com/embed/0JNveApOshw?rel=0;&amp;&amp;loop=1;&amp;mute=1;&amp;playlist=0JNveApOshw"
+            src="https://www.youtube.com/embed/oPmhE_EmLjk?rel=0;&amp;mute=1;"
             frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen=""
@@ -120,3 +82,50 @@
     </div>
   </body>
 </html>
+<script>
+  var user = $("#username");
+  pass = $("#password");
+  email = $("#email");
+  errorMsg = $(".form-error-message");
+  $("#recoverAccount").hide();
+  user.on("keyup keydown", function () {
+    errorMsg.text("");
+  });
+  pass.on("keyup keydown", function () {
+    errorMsg.text("");
+  });
+  $("form#login").submit(function (e) {
+    e.preventDefault();
+    if ($(user).val().length < 1 || $(pass).val().length < 1) {
+      errorMsg.text("Vui lòng nhập tên đăng nhập/mật khẩu");
+    } else if ($(user).val() !== "user1" || $(pass).val() !== "user1") {
+      errorMsg.text("Tên đăng nhập hoặc mật khẩu không đúng");
+    }
+  });
+  $("form#recoverAccount").submit(function (e) {
+    e.preventDefault();
+    if ($(user).val().length < 1 || $(email).val().length < 1) {
+      errorMsg.text("Vui lòng nhập tên đăng nhập/email");
+    } else if ($(user).val() !== "user1" || $(email).val() !== "user1@gmail.com") {
+      errorMsg.text("Tên đăng nhập hoặc email không đúng");
+    }
+  });
+  $(".form__link").click(function () {
+    if ($(this).hasClass("form__back")) {
+      $("#recoverAccount").hide();
+      $("#login").show();
+      errorMsg.text("");
+    } else {
+      $("#recoverAccount").show();
+      $("#login").hide();
+      errorMsg.text("");
+    }
+  });
+</script>
+<style>
+  html,
+  body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+</style>
