@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivered Express</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/844ecd1e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <div id="backToTop">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <!-- HEADER TOP -->
+      <div class="header-top py-10">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="header-left d-flex align-items-center">
+            <span class="header-left__title text-white">
+              Giờ làm việc :
+              <b>T2-T7: 8:00 - 18:00 (CN 8:00 - 17:00)</b>
+            </span>
+          </div>
+          <div class="header-right d-flex align-items-center">
+            <div class="header-right__login">
+              <a href="../public/login.html" class="text-white">Tạo vận đơn/Đăng nhập</a>
+            </div>
+            <div class="header-right__lang">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle header-right__change"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  title="Tiếng Việt"
+                  href="javascript:void(0)"
+                >
+                  <img src="../assets/img/vi.png" alt="Tiếng Việt" />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="../assets/img/en.png" alt="English" />
+                    English
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="../assets/img/vi.png" alt="Tiếng Việt" />
+                    Tiếng Việt
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER BOT -->
+      <div class="header-bot main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mt-2 mt-lg-0" href="/public" title="Trang chủ">
+              <img src="../assets/img/logo-main.png" height="60" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/public">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Vận đơn</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="../public/login.html" class="dropdown-item">
+                        Tạo vận đơn</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/tracking.html" class="dropdown-item"
+                        >Tra cứu vận đơn</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/tracking_fee.html" class="dropdown-item">
+                        Tra cứu cước phí</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/detail.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Dịch vụ</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ chuyển phát nhanh</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ phát hỏa tốc, yêu cầu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ hàng giá trị cao</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ thường</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ tiết kiệm 24h</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ gia tăng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Bảng giá</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="hni"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Hà Nội</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="hcm"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Hồ Chí Minh</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="dna"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Đà Nẵng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/career.html">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/news_list.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/contact.html">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex align-items-center main-nav-call fw-bold">
+              <a class="main-nav-call__title text-primary" href="tel:0967118716">
+                <i class="fa-solid fa-phone me-1"></i>
+                0967.118.716
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div id="news-list" class="news-list">
+      <div class="news-banner"></div>
+      <div class="container news-section">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="row">
+                <div class="col-md-3 image">
+                  <a href="../public/detail.html" title="Xem chi tiết">
+                    <img src="../assets/img/slide_1.jpg" width="328" height="173" />
+                  </a>
+                </div>
+                <div id="title" class="col-md-9">
+                  <p style="padding: 0">
+                    <a href="../public/detail.html" title="Xem chi tiết"
+                      ><span>TƯNG BỪNG KHAI TRƯƠNG BƯU CỤC</span></a
+                    >
+                  </p>
+                  <div>
+                    Gửi hàng hóa, bưu phẩm chẳng còn khó khăn… Dịch vụ chuyển phát nhanh
+                    đã xuất hiện và chiếm ưu thế trên thị trường hiện nay rồi nha.
+                    Delivered Express cung cấp dịch vụ chuyển phát nhanh trong nước và
+                    quốc tế t
+                  </div>
+                </div>
+
+                <div class="col-md-12 content-footer">
+                  <p style="margin: 0px" class="news-item__descrip">
+                    <small><i class="fa fa-clock-o"></i> 07/02/2023 11:57</small
+                    ><a
+                      href="../public/detail.html"
+                      style="text-decoration: underline; float: right"
+                      >Xem chi tiết</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer" class="text-center text-lg-start bg-light">
+      <div class="footer-img">
+        <img src="../assets/img/banner.jfif" alt="" />
+      </div>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3 align-items-center">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-2">
+              <img src="../assets/img/unnamed.jpg" alt="" />
+            </h6>
+            <p>
+              <b class="d-block">Hỗ trợ khách hàng</b>
+              <span class="d-block">Hotling: 0967.118.716</span>
+              <span class="d-block">Giờ làm việc: T2-T7: 8h - 18h (CN: 8h - 17h)</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <div class="text-center p-4 copyright" style="background-color: rgba(0, 0, 0, 0.1)">
+        © 2023 Bản quyền thuộc về
+        <a class="text-reset fw-bold" href="#">Delivered Express</a>
+        <div>Giấy phép bưu chính số ngày tháng năm của BỘ THÔNG TIN VÀ TRUYỀN THÔNG</div>
+      </div>
+    </footer>
+  </body>
+</html>
+<style>
+  .news-banner {
+    background-image: url(../assets/img/news-banner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 0;
+  }
+  .news-list .news-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .news-list .news-item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  .news-list .news-item {
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+  }
+  .news-list .news-item:hover {
+    box-shadow: 0 0 7px 0 #888888;
+  }
+  @media (min-width: 768px) {
+    .news-item__descrip {
+      padding: 10px 10px 0 10px;
+    }
+  }
+</style>

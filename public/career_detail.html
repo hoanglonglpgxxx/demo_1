@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivered Express</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/844ecd1e03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <div id="backToTop">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <!-- HEADER TOP -->
+      <div class="header-top py-10">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="header-left d-flex align-items-center">
+            <span class="header-left__title text-white">
+              Giờ làm việc :
+              <b>T2-T7: 8:00 - 18:00 (CN 8:00 - 17:00)</b>
+            </span>
+          </div>
+          <div class="header-right d-flex align-items-center">
+            <div class="header-right__login">
+              <a href="../public/login.html" class="text-white">Tạo vận đơn/Đăng nhập</a>
+            </div>
+            <div class="header-right__lang">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle header-right__change"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  title="Tiếng Việt"
+                  href="javascript:void(0)"
+                >
+                  <img src="../assets/img/vi.png" alt="Tiếng Việt" />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="../assets/img/en.png" alt="English" />
+                    English
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="../assets/img/vi.png" alt="Tiếng Việt" />
+                    Tiếng Việt
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER BOT -->
+      <div class="header-bot main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mt-2 mt-lg-0" href="/public" title="Trang chủ">
+              <img src="../assets/img/logo-main.png" height="60" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/public">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Vận đơn</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="../public/login.html" class="dropdown-item">
+                        Tạo vận đơn</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/tracking.html" class="dropdown-item"
+                        >Tra cứu vận đơn</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/tracking_fee.html" class="dropdown-item">
+                        Tra cứu cước phí</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/detail.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Dịch vụ</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ chuyển phát nhanh</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ phát hỏa tốc, yêu cầu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ hàng giá trị cao</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ thường</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ tiết kiệm 24h</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../public/detail.html" class="dropdown-item">
+                        Dịch vụ gia tăng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="javascript:void(0)"
+                    >Bảng giá</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="hni"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Hà Nội</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="hcm"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Hồ Chí Minh</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../public/download.html"
+                        data-page="dna"
+                        class="dropdown-item"
+                      >
+                        Bảng giá Đà Nẵng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/career.html">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/news_list.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../public/contact.html">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex align-items-center main-nav-call fw-bold">
+              <a class="main-nav-call__title text-primary" href="tel:0967118716">
+                <i class="fa-solid fa-phone me-1"></i>
+                0967.118.716
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div id="career-detail" class="career-detail">
+      <div class="career-banner"></div>
+      <div class="container">
+        <div class="panel border-bot">
+          <div class="panel-heading py-30">
+            <h3 class="panel-title text-uppercase text-center">Tên vị trí</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="accordion">
+                  <p
+                    class="accordion_text"
+                    style="font-weight: bold; font-size: 18px; margin-bottom: 10px"
+                  >
+                    Email Liên Lạc
+                  </p>
+                  <div class="clearall accordion_content">
+                    <div class="content_fck" style="padding-bottom: 15px">
+                      <p>Hotline: 1900 3351</p>
+                      <p>Email: tuyendung@netpost.vn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="accordion">
+                  <p
+                    class="accordion_text"
+                    style="font-weight: bold; font-size: 18px; margin-bottom: 10px"
+                  >
+                    Thông tin tuyển dụng
+                  </p>
+                  <div class="clearall accordion_content">
+                    <ul class="col-xs-12 job-quick-view">
+                      <li class="col-xs-12" style="line-height: 1.7">
+                        <i class="fa fa-sitemap fa-fw"></i><span> Nhân viên Bưu tá</span>
+                      </li>
+                      <li class="col-xs-12" style="line-height: 1.7">
+                        <i class="fa fa-usd fa-fw"></i>
+                        <span> Thỏa thuận </span>
+                      </li>
+                      <li class="col-xs-12" style="line-height: 1.7">
+                        <i class="fa fa-map-marker fa-fw"></i><span> Hà Nội</span>
+                      </li>
+                      <li class="col-xs-12" style="line-height: 1.7">
+                        <i class="fa fa-filter fa-fw"></i
+                        ><span> 1-2 năm kinh nghiệm</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <p class="accordion_text" style="font-weight: bold; font-size: 18px">
+                    Ngày hết hạn : 30/06/2022
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="job-detail-content">
+          <ul class="nav nav-tabs" style="margin-left: 0">
+            <li class="nav-item col-12 col-sm-12 col-md-6 col-left">
+              <a
+                href="javascript:void(0)"
+                class="nav-link menu_tab text-center active fw-bold"
+                data-bs-toggle="tab"
+                data-bs-target="#job-description"
+                role="tab"
+                aria-controls="job-description"
+                aria-selected="true"
+                ><img
+                  src="../assets/img/job-des.png"
+                  style="margin-right: 10px; width: 64px"
+                /><span> Mô tả công việc</span></a
+              >
+            </li>
+            <li class="nav-item col-12 col-sm-12 col-md-6">
+              <a
+                href="javascript:void(0)"
+                class="nav-link menu_tab text-center fw-bold"
+                data-bs-toggle="tab"
+                data-bs-target="#job-apply"
+                role="tab"
+                aria-controls="job-apply"
+                aria-selected="false"
+                ><img
+                  src="../assets/img/job-apply.png"
+                  style="margin-right: 10px; width: 64px"
+                /><span> Ứng tuyển</span></a
+              >
+            </li>
+          </ul>
+          <div
+            class="col-md-12 tab-content"
+            style="padding: 20px 10px; border-radius: 5px"
+          >
+            <div id="job-description" class="tab-pane fade show active" role="tabpanel">
+              <div class="content">
+                <p>
+                  <span
+                    >Delivered Expreess là đơn vị chuyên cung cấp các dịch vụ chuyển phát
+                    nhanh trong nước. Tuy là một công ty trẻ mới tham gia vào thị trường
+                    chuyển phát, nhưng nhờ có sự tin tưởng ủng hộ nhiệt tình của Quý khách
+                    hàng và các đối tác, chúng tôi đã chiếm cho mình một chỗ đứng vững
+                    chắc trong lĩnh vực Bưu chính chuyển phát, phục vụ chuyển phát nhanh,
+                    hàng hóa khắp 63 tỉnh thành trên cả nước và quốc tế.</span
+                  >
+                </p>
+                <p>
+                  Netpost đang cần tìm đồng đội là
+                  <span class="text-uppercase">Tên vị trí</span>
+                  trẻ trung, năng động, làm việc chuyên nghiệp và có trách nhiệm.
+                </p>
+
+                <p><strong>Địa điểm làm việc:</strong> Vị trí</p>
+
+                Mô tả công việc:
+                <ul>
+                  <li>Mô tả 1</li>
+                  <li>Mô tả 1</li>
+                  <li>Mô tả 1</li>
+                  <li>Mô tả 1</li>
+                </ul>
+                Yêu cầu:
+                <ul>
+                  <li>Yêu cầu 1</li>
+                  <li>Yêu cầu 1</li>
+                  <li>Yêu cầu 1</li>
+                  <li>Yêu cầu 1</li>
+                </ul>
+                Chế độ:
+                <ul>
+                  <li>Chế độ 1</li>
+                  <li>Chế độ 1</li>
+                  <li>Chế độ 1</li>
+                  <li>Chế độ 1</li>
+                </ul>
+                <b>Liên hệ: 0967 118 716</b>
+              </div>
+            </div>
+            <div id="job-apply" class="tab-pane fade" role="tabpanel">
+              <div class="content">
+                <div class="title about mt-5 mb-5">
+                  <h4 class="title-page text-center">
+                    <span> Nộp đơn ứng tuyển</span>
+                  </h4>
+                </div>
+                <div class="row">
+                  <input type="text" id="ID" hidden="" />
+                  <div class="row">
+                    <div class="form-group">
+                      <p style="padding: 0; margin: 0">Chức danh: Vị trí</p>
+                      <p style="padding: 0; margin: 0">Địa điểm: Địa điểm</p>
+                      <p style="font-weight: bold">Thông tin liên hệ và đơn ứng tuyển</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <label data-required="1">Họ tên</label>
+                      <input type="text" class="form-control" id="HO_TEN" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <label data-required="1">Email</label>
+                      <input type="text" class="form-control" id="EMAIL" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <label data-required="1">Số điện thoại</label>
+                      <input type="text" class="form-control" id="SDT" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <label data-required="1">Đơn ứng tuyển</label>
+                      <div class="input-group">
+                        <label class="input-group-btn" style="height: 34px">
+                          <span class="btn btn-primary">
+                            Chọn tệp
+                            <input
+                              id="FileDinhKem"
+                              type="file"
+                              style="display: none"
+                              name="FileDinhKem"
+                              required=""
+                              accept=".doc,.docx, .xls, .xlsx, .pdf"
+                            />
+                          </span>
+                        </label>
+                        <input
+                          class="form-control"
+                          readonly=""
+                          style="margin-left: 5px"
+                          id="tentep"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="form-group" style="text-align: center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="Save()"
+                        id="Save"
+                        style="padding: 14px !important; width: 100%"
+                      >
+                        Ứng tuyển
+                      </button>
+                      <div
+                        class="alert alert-danger"
+                        role="alert"
+                        id="mess_apply"
+                        style="margin-top: 10px; width: 100%"
+                        hidden=""
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer" class="text-center text-lg-start bg-light">
+      <div class="footer-img">
+        <img src="../assets/img/banner.jfif" alt="" />
+      </div>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3 align-items-center">
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-2">
+              <img src="../assets/img/unnamed.jpg" alt="" />
+            </h6>
+            <p>
+              <b class="d-block">Hỗ trợ khách hàng</b>
+              <span class="d-block">Hotling: 0967.118.716</span>
+              <span class="d-block">Giờ làm việc: T2-T7: 8h - 18h (CN: 8h - 17h)</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Trung</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Nam</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Miền Bắc</h6>
+            <p>
+              <i class="fa fa-home"></i>
+              <a href="#!" class="text-reset">Số X Lô X Phường A, Quận A, TP. A</a>
+              <span class="text-reset">Số X Lô X Phường A, Quận A, TP. A</span>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <span class="text-reset">012.3456.789</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <span class="text-reset">admin@domain.vn</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <div class="text-center p-4 copyright" style="background-color: rgba(0, 0, 0, 0.1)">
+        © 2023 Bản quyền thuộc về
+        <a class="text-reset fw-bold" href="#">Delivered Express</a>
+        <div>Giấy phép bưu chính số ngày tháng năm của BỘ THÔNG TIN VÀ TRUYỀN THÔNG</div>
+      </div>
+    </footer>
+  </body>
+</html>
+<style>
+  .career-search label {
+    font-size: 16px;
+  }
+  .career-banner {
+    background-image: url(../assets/img/career.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 0;
+  }
+  .job-detail-content .nav-link:hover,
+  .job-detail-content .nav-link:focus,
+  .job-detail-content .nav-link.active {
+    background-color: #edf4fa;
+  }
+</style>

@@ -32,4 +32,9 @@ $(document).ready(function () {
             $('.news-right .news-right__box').last().hide();
         }
     }).resize();
+    $("label").each(function () {
+        if ($(this).data("required") === 1) {
+            $(this).append('<span class="d-inline-block text-danger require-label">*</span>');
+        }
+    });
 });
