@@ -25,7 +25,6 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
-    <script type="text/javascript" src="./assets/js/getNav.js"></script>
   </head>
   <body>
     <script type="text/javascript" src="./assets/js/script.js"></script>
@@ -771,6 +770,20 @@
       },
     },
   });
+  $(window)
+    .resize(function () {
+      var heightDefault = $(window).height();
+      if ($(window).width() > 768) {
+        $(".owl-carousel-main .item, .owl-carousel-main").css({
+          height: heightDefault/1.2,
+        });
+      } else {
+        $(".owl-carousel-acti .item, .owl-carousel-acti").css({
+          height: heightDefault/1.5,
+        });
+      }
+    })
+    .resize();
   $(".owl-carousel-acti").owlCarousel({
     loop: true,
     margin: 10,
@@ -783,10 +796,10 @@
     navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
     responsive: {
       0: {
-        items: 2,
+        items: 1.2,
       },
       600: {
-        items: 2,
+        items: 1.2,
       },
       1000: {
         items: 1.5,
