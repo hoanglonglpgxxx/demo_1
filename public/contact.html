@@ -19,9 +19,14 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="../assets/lib/jquery-validation-1.19.5/dist/jquery.validate.min.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/contact.js"></script>
   </head>
   <body>
-    <script type="text/javascript" src="../assets/js/script.js"></script>
     <div id="backToTop">
       <i class="fa fa-arrow-up"></i>
     </div>
@@ -255,37 +260,75 @@
                     liên hệ lại với bạn càng sớm càng tốt. Vui lòng điền vào đầy đủ thông
                     tin bên dưới.
                   </p>
-                  <div class="row">
-                    <div class="col-12">
-                      <label class="label" data-required="1">Loại hình dịch vụ</label>
-                      <input class="form-control" type="text" />
+                  <form id="formContact">
+                    <div class="row">
+                      <div class="col-12">
+                        <label required="1" class="label" data-required="1"
+                          >Loại hình dịch vụ</label
+                        >
+                        <input
+                          class="form-control contact-input"
+                          name="fields[services]"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label required="1" class="label" data-required="1"
+                          >Tên của bạn</label
+                        >
+                        <input
+                          class="form-control contact-input"
+                          name="fields[name]"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label required="1" class="label" data-required="1"
+                          >SĐT nhận</label
+                        >
+                        <input
+                          class="form-control contact-input"
+                          name="fields[phone]"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label required="1" class="label" data-required="1"
+                          >Địa chỉ email</label
+                        >
+                        <input
+                          class="form-control contact-input"
+                          name="fields[email]"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label required="1" class="label" data-required="1"
+                          >Tiêu đề</label
+                        >
+                        <input
+                          class="form-control contact-input"
+                          name="fields[title]"
+                          type="text"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label required="1" class="label" data-required="1"
+                          >Ghi chú</label
+                        >
+                        <textarea
+                          class="contact-input form-control"
+                          name="fields[note]"
+                          rows="4"
+                        ></textarea>
+                      </div>
+                      <div class="col-12 text-center mt-2">
+                        <button class="btn btn-danger" type="submit">
+                          <i class="fa fa-paper-plane" id="plane"></i> &nbsp; Gửi đi
+                        </button>
+                      </div>
                     </div>
-                    <div class="col-12">
-                      <label class="label" data-required="1">Tên của bạn</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                    <div class="col-6">
-                      <label class="label" data-required="1">SĐT nhận</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                    <div class="col-6">
-                      <label class="label" data-required="1">Địa chỉ email</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                    <div class="col-12">
-                      <label class="label" data-required="1">Tiêu đề</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                    <div class="col-12">
-                      <label class="label" data-required="1">Ghi chú</label>
-                      <textarea class="form-control" rows="4"></textarea>
-                    </div>
-                    <div class="col-12 text-center mt-2">
-                      <button class="btn btn-danger">
-                        <i class="fa fa-paper-plane" id="plane"></i> &nbsp; Gửi đi
-                      </button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

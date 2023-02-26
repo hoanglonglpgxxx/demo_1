@@ -10,6 +10,10 @@ a {
     color: $primary;
   }
 }
+.error {
+  color: $danger;
+  font-style: italic;
+}
 table {
   @media (max-width: 768px) {
     display: block;
