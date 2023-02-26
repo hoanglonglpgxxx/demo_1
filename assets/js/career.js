@@ -13,7 +13,6 @@ $(document).ready(function () {
         rules: {
             "fields[file]": {
                 required: true,
-                fileSize: 10,
             },
             "fields[phone]": {
                 required: true,

@@ -41,6 +41,3 @@ $(document).ready(function () {
     modal = $('<div class="modal fade ' + modalClass + '" tabindex="-1" role="dialog"><div class="modal-dialog' + '" role="document"><div class="modal-content"><div class="modal-header">'
         + '<h4 class="modal-title">' + modalTitle + '</h4>' + '<button type="button" class="close" title="Đóng" onclick="$(this).parents(\'.modal\').removeClass(\'show\')">' + '<span aria-hidden="true"><i class="fas fa-times"></i></span></button>' + '</div > <div class="modal-body">' + modalBody + '</div>' + '<div class="modal-footer justify-content-center p-1">' + (modalFooter ? modalFooter : '') + '</div ></div ></div > ');
 });
-$.validator.addMethod('fileSize', function (value, element, param) {
-    return this.optional(element) || (element.files[0].size <= param);
-}, 'Kích thước file tối đa là {0}');
