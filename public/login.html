@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script
       type="text/javascript"
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      src="../assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
     <script
       type="text/javascript"
@@ -21,6 +21,12 @@
     ></script>
   </head>
   <body class="login-body">
+    <script
+      type="text/javascript"
+      src="../assets/lib/jquery-validation-1.19.5/dist/jquery.validate.min.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/login.js"></script>
     <div class="header-login justify-content-center row">
       <img style="height: 120px; width: auto" src="/assets/img/logo-main.png" alt="" />
       <div class="text-center text-uppercase logo col-12">
@@ -36,11 +42,22 @@
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
               <label for="username">Tên đăng nhập</label>
-              <input type="text" class="form__input" id="username" autofocus />
+              <input
+                type="text"
+                class="form__input"
+                name="fields[username]"
+                id="username"
+                autofocus
+              />
             </div>
             <div class="form__input-group">
               <label for="password">Mật khẩu</label>
-              <input type="password" class="form__input" id="password" />
+              <input
+                type="password"
+                class="form__input"
+                name="fields[password]"
+                id="password"
+              />
             </div>
             <div class="form-error-message"></div>
             <button class="form__button" type="submit">Đăng nhập</button>
@@ -52,13 +69,18 @@
             </p>
             <div class="form__input-group">
               <label for="username">Tên đăng nhập</label>
-              <input type="text" class="form__input" id="username" autofocus />
+              <input
+                type="text"
+                class="form__input"
+                name="fields[rsUsername]"
+                id="username"
+                autofocus
+              />
             </div>
             <div class="form__input-group">
               <label for="email">Địa chỉ email</label>
-              <input type="email" class="form__input" id="email" />
+              <input type="email" class="form__input" name="fields[rsEmail]" id="email" />
             </div>
-            <div class="form-error-message"></div>
             <button class="form__button form__recover" type="submit">Khôi phục</button>
             <a href="javascript:void(0)" class="form__back form__link d-block"
               >Quay lại</a
@@ -85,39 +107,14 @@
   var user = $("#username");
   pass = $("#password");
   email = $("#email");
-  errorMsg = $(".form-error-message");
   $("#recoverAccount").hide();
-  user.on("keyup keydown", function () {
-    errorMsg.text("");
-  });
-  pass.on("keyup keydown", function () {
-    errorMsg.text("");
-  });
-  $("form#login").submit(function (e) {
-    e.preventDefault();
-    if ($(user).val().length < 1 || $(pass).val().length < 1) {
-      errorMsg.text("Vui lòng nhập tên đăng nhập/mật khẩu");
-    } else if ($(user).val() !== "user1" || $(pass).val() !== "user1") {
-      errorMsg.text("Tên đăng nhập hoặc mật khẩu không đúng");
-    }
-  });
-  $("form#recoverAccount").submit(function (e) {
-    e.preventDefault();
-    if ($(user).val().length < 1 || $(email).val().length < 1) {
-      errorMsg.text("Vui lòng nhập tên đăng nhập/email");
-    } else if ($(user).val() !== "user1" || $(email).val() !== "user1@gmail.com") {
-      errorMsg.text("Tên đăng nhập hoặc email không đúng");
-    }
-  });
   $(".form__link").click(function () {
     if ($(this).hasClass("form__back")) {
       $("#recoverAccount").hide();
       $("#login").show();
-      errorMsg.text("");
     } else {
       $("#recoverAccount").show();
       $("#login").hide();
-      errorMsg.text("");
     }
   });
 </script>

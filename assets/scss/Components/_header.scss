@@ -178,17 +178,7 @@
           padding: 0;
         }
       }
-      &-menu {
-        &:before {
-          position: absolute;
-          top: -10px;
-          left: 0;
-          width: 100%;
-          height: 10px;
-          background: transparent;
-          content: "";
-        }
-      }
+
       > .dropdown-menu {
         top: 30px;
         > .dropdown-item {

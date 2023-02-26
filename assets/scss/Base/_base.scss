@@ -10,6 +10,9 @@ a {
     color: $primary;
   }
 }
+.dropdown-menu {
+  padding: 0;
+}
 .background-primary {
   background: $primary;
 }
@@ -30,7 +33,7 @@ a {
   color: $danger;
   font-style: italic;
 }
-.show {
+.modal.show {
   display: block;
 }
 .modal {
