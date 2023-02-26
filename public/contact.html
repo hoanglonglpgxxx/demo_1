@@ -266,11 +266,13 @@
                         <label required="1" class="label" data-required="1"
                           >Loại hình dịch vụ</label
                         >
-                        <input
-                          class="form-control contact-input"
-                          name="fields[services]"
-                          type="text"
-                        />
+                        <select name="fields[services]" class="form-select contact-input">
+                          <option value="">-- Chọn --</option>
+                          <option value="1">Dịch vụ phát hỏa tốc, yêu cầu</option>
+                          <option value="2">Dịch vụ hàng giá trị cao, Express</option>
+                          <option value="3">Dịch vụ chuyển phát thường</option>
+                          <option value="4">Dịch vuh phát tiết kiệm/ 48h</option>
+                        </select>
                       </div>
                       <div class="col-12">
                         <label required="1" class="label" data-required="1"
@@ -299,7 +301,7 @@
                         <input
                           class="form-control contact-input"
                           name="fields[email]"
-                          type="text"
+                          type="email"
                         />
                       </div>
                       <div class="col-12">
