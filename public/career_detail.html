@@ -232,25 +232,22 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="accordion">
-                  <p
-                    class="accordion_text"
-                    style="font-weight: bold; font-size: 18px; margin-bottom: 10px"
-                  >
+                  <p class="accordion_text fw-bold mb-2" style="font-size: 18px">
                     Thông tin tuyển dụng
                   </p>
                   <div class="clearall accordion_content">
                     <ul class="col-xs-12 job-quick-view">
-                      <li class="col-xs-12" style="line-height: 1.7">
+                      <li class="col-xs-12">
                         <i class="fa fa-sitemap fa-fw"></i><span> Nhân viên Bưu tá</span>
                       </li>
-                      <li class="col-xs-12" style="line-height: 1.7">
+                      <li class="col-xs-12">
                         <i class="fa fa-usd fa-fw"></i>
                         <span> Thỏa thuận </span>
                       </li>
-                      <li class="col-xs-12" style="line-height: 1.7">
+                      <li class="col-xs-12">
                         <i class="fa fa-map-marker fa-fw"></i><span> Hà Nội</span>
                       </li>
-                      <li class="col-xs-12" style="line-height: 1.7">
+                      <li class="col-xs-12">
                         <i class="fa fa-filter fa-fw"></i
                         ><span> 1-2 năm kinh nghiệm</span>
                       </li>
@@ -258,9 +255,7 @@
                   </div>
                 </div>
                 <div class="accordion">
-                  <p class="accordion_text" style="font-weight: bold; font-size: 18px">
-                    Ngày hết hạn : 30/06/2022
-                  </p>
+                  <p class="accordion_text fw-bold">Ngày hết hạn : 30/06/2022</p>
                 </div>
               </div>
             </div>
@@ -392,6 +387,7 @@
                         <input
                           class="form-control"
                           readonly=""
+                          value=""
                           name="fields[file]"
                           style="margin-left: 5px"
                           id="tentep"
@@ -495,9 +491,6 @@
   .career-search label {
     font-size: 16px;
   }
-  .career #tentop-error {
-    width: 100%;
-  }
   .career-banner {
     background-image: url(../assets/img/career.jpg);
     background-position: bottom;
@@ -512,3 +505,9 @@
     background-color: #edf4fa;
   }
 </style>
+<script>
+  $('[name="fileInp"]').change(function () {
+    var file = $(this).prop("files")[0].name;
+    $('[name="fields[file]"]').val(file);
+  });
+</script>

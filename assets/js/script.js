@@ -1,4 +1,9 @@
 var modalFooter, modalTitle, modalBody, modalClass;
+$.validator.addMethod("phoneVN", function (value, element) {
+    var value2 = value;
+    value = value.replace(/[\.\s\-]/g, '');
+    return this.optional(element) || ((value.length > 9) && value.replace(/\s+/g, '').match(/^(0|\+?84|\(\+?84\))(9[0-9]|8[1-9]|7[0-3,6-9]|5[2,5,6,8,9]|3[2-9]|6[9]|2\d{2})\d{7}$/) && !value2.match(/^[\s|\.|\-]+|[\s|\.|\-]+$/));
+}, "Vui lòng nhập số điện thoại chính xác");
 $(document).ready(function () {
     $('.slider-box__item').hover(function () {
         $('.slider-box__item').removeClass('active');

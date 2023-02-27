@@ -81,6 +81,7 @@
               <label for="email">Địa chỉ email</label>
               <input type="email" class="form__input" name="fields[rsEmail]" id="email" />
             </div>
+            <div class="form-error-message"></div>
             <button class="form__button form__recover" type="submit">Khôi phục</button>
             <a href="javascript:void(0)" class="form__back form__link d-block"
               >Quay lại</a
@@ -107,6 +108,25 @@
   var user = $("#username");
   pass = $("#password");
   email = $("#email");
+  errorMsg = $(".form-error-message");
+  user.on("keyup keydown", function () {
+    errorMsg.text("");
+  });
+  pass.on("keyup keydown", function () {
+    errorMsg.text("");
+  });
+  $("form#login").submit(function (e) {
+    e.preventDefault();
+    if ($(user).val() !== "user1" || $(pass).val() !== "user1") {
+      errorMsg.text("Tên đăng nhập hoặc mật khẩu không đúng");
+    }
+  });
+  $("form#recoverAccount").submit(function (e) {
+    e.preventDefault();
+    if ($(user).val() !== "user1" || $(email).val() !== "user1@gmail.com") {
+      errorMsg.text("Tên đăng nhập hoặc email không đúng");
+    }
+  });
   $("#recoverAccount").hide();
   $(".form__link").click(function () {
     if ($(this).hasClass("form__back")) {

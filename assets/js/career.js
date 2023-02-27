@@ -16,6 +16,7 @@ $(document).ready(function () {
             },
             "fields[phone]": {
                 required: true,
+                phoneVN: true,
             },
             "fields[name]": {
                 required: true,

@@ -10,6 +10,10 @@ a {
     color: $primary;
   }
 }
+label.error {
+  display: block !important;
+  width: 100%;
+}
 .dropdown-menu {
   padding: 0;
 }
