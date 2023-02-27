@@ -7,3 +7,22 @@ function getFileData(myFile){
    var filename = file.name;
    console.log(file,filename);
 }
+<?php
+    $params['items'] = array(
+        '0'=>array(
+            'title' => 'Đà Nẵng',
+        ),
+        '1'=>array(
+            'title' => 'Thanh Hoá',
+        ),
+        '2'=>array(
+            'title' => 'Nha Trang',
+        ),
+        '3'=>array(
+            'title' => 'Hà Nội',
+        ),
+        '4'=>array(
+            'title' => 'Phú Quốc',
+        ),
+    );
+?>
