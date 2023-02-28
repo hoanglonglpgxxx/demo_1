@@ -312,3 +312,23 @@ label {
     top: 38px;
   }
 }
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  border-radius: 50%;
+  border: 1px solid $primary;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+    color: $primary;
+  }
+}
+.relative {
+  position: relative;
+}
