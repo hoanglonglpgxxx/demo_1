@@ -45,11 +45,14 @@ $(document).ready(function () {
     });
     modal = $('<div class="modal fade ' + modalClass + '" tabindex="-1" role="dialog"><div class="modal-dialog' + '" role="document"><div class="modal-content"><div class="modal-header">'
         + '<h4 class="modal-title">' + modalTitle + '</h4>' + '<button type="button" class="close" title="Đóng" onclick="$(this).parents(\'.modal\').removeClass(\'show\')">' + '<span aria-hidden="true"><i class="fas fa-times"></i></span></button>' + '</div > <div class="modal-body">' + modalBody + '</div>' + '<div class="modal-footer justify-content-center p-1">' + (modalFooter ? modalFooter : '') + '</div ></div ></div > ');
-    $('input[type=text]').each(function () {
-        $(this).wrap("<div class='input-wrapper clear-text relative'></div>");
-        $(this).after("  <a href=\"javascript:;\" class=\"icon clear-icon\">\n" +
-            "      <i class=\"fas fa-times\"></i>\n" +
-            "            </a>");
+    var usingTypes = ['text', 'password', 'email'];
+    $('input').each(function () {
+        if (usingTypes.includes($(this).attr('type'))) {
+            $(this).wrap("<div class='input-wrapper clear-text relative'></div>");
+            $(this).after("  <a href=\"javascript:;\" class=\"icon clear-icon\">\n" +
+                "      <i class=\"fas fa-times\"></i>\n" +
+                "            </a>");
+        }
     });
     $('.clear-icon').css("display", "none");
     $('.input-wrapper').each(function () {
